@@ -1,0 +1,133 @@
+/* start glople rulze  */
+* {
+    /* primary  */
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    /* neutral  */
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    min-height: 100vh;
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Pale-blue);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* End glople rulze  */
+
+.card {
+    width: 350px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.card>img {
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+.card h2 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+    color: var(--Dark-blue);
+    margin-top: 30px;
+}
+.card>p {
+    padding: 0px 40px;
+    font-size: 0.9rem;
+    color: var(--Bright-blue);
+}
+.card .container_music {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   background: var(--Very-pale-blue);
+   width: 80%;
+   margin: 10px auto;
+   border-radius: 10px;
+}
+.card .container_music img{
+    width: 2.3rem;
+}
+.card .container_music a {
+    font-size: 0.8rem;
+    font-weight: 900;
+    transition: .3s;
+}
+.card .container_music a:hover {
+    text-decoration: none;
+    color: var(--Desaturated-blue);
+}
+.card .container_music .price {
+    display: flex;
+    align-items: center;
+}
+
+.card .container_music .price .text {
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.card .container_music .price .text p{
+    padding: 0;
+    margin: 0px 0px 10px;
+    font-size: 0.9rem;
+}
+.card .container_music .price .text h4{
+    margin: 0;
+    font-size: 0.9rem;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+    color: var(--Dark-blue);
+}
+.card button {
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+    padding: 10px 0px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--Bright-blue);
+    color: var(--Very-pale-blue);
+    font-weight: 900;
+    font-size: 0.8rem;
+    color: var(--Very-pale-blue);
+    transition: .4s;
+    cursor: pointer;
+}
+button:hover {
+   opacity: .8;
+}
+.card .cancel {
+    display: block;
+    width: fit-content;
+    margin: 20px auto 30px;
+    font-size: 0.8rem;
+    font-weight: 900;
+    color: var(--Desaturated-blue);
+    transition: .3s;
+    cursor: pointer;
+}
+.cancel:hover {
+   color: var(--Dark-blue);
+}
